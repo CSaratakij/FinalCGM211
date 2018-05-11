@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
         _CollisionHandler();
         _MovementHandler();
+        _CheckFalling();
     }
 
     void _InputHandler()
@@ -82,5 +83,13 @@ public class PlayerController : MonoBehaviour
     void _MovementHandler()
     {
         rigid.AddForce(inputDir * moveForce * Time.deltaTime);
+    }
+
+    void _CheckFalling()
+    {
+        if (rigid.position.y <= -10.0f)
+        {
+            GameController.GameOver();
+        }
     }
 }

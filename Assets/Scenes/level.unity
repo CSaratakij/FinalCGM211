@@ -1473,6 +1473,11 @@ Prefab:
       propertyPath: moveForce
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114677421166855036, guid: 7bb17123e80304a4d94fcbff4f5d8f07,
+        type: 2}
+      propertyPath: radius
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bb17123e80304a4d94fcbff4f5d8f07, type: 2}
   m_IsPrefabParent: 0
