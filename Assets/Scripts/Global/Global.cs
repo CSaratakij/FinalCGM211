@@ -21,6 +21,11 @@ public class Global
         _FireEvent_OnScoreChanged();
     }
 
+    public static void Reset()
+    {
+        _score = 0;
+    }
+
     public static int GetScore()
     {
         return _score;

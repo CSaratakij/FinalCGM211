@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        results = new Collider[1];
+        results = new Collider[5];
         rigid = GetComponent<Rigidbody>();
     }
 
@@ -45,8 +45,10 @@ public class PlayerController : MonoBehaviour
 
     void _InputHandler()
     {
-        inputDir.x = Input.GetAxis("Horizontal");
-        inputDir.z = Input.GetAxis("Vertical");
+        inputDir.z = Input.GetAxis("Horizontal");
+        inputDir.z *= -1.0f;
+
+        inputDir.x = Input.GetAxis("Vertical");
     }
 
     void _CollisionHandler()

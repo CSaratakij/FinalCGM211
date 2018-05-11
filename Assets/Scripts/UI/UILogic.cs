@@ -15,6 +15,7 @@ public class UILogic : MonoBehaviour
 
     public void Restart()
     {
+        Global.Reset();
         var scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
